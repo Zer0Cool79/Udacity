@@ -13,23 +13,32 @@ extension ControlCenter {
     func randomlyRotateRightOrLeft(robot: ComplexRobotObject) {
         let randomNumber = arc4random() % 2
         
-        // Step 1.2
-        // TODO: Write an if statement that randomly calls either robot.rotateRight() or robot.rotateLeft() (based on the value of the randomNumber constant)
-        if randomNumber > 0 {
-            robot.rotateLeft()
-        }else{
+        // You may want to paste your Part 1 implementation of randomlyRotateRightOrLeft(robot: ComplexRobotObject) here
+        if randomNumber == 0{
             robot.rotateRight()
+            
         }
+        
+        if randomNumber == 1{
+            robot.rotateLeft()
+        }
+        
+        
     }
     
     func continueStraightOrRotate(robot: ComplexRobotObject) {
         let randomNumber = arc4random() % 2
-        // Step 1.3
-        // TODO: Write an if statement that randomly calls either robot.move() or randomlyRotateRightOrLeft(robot: ComplexRobotObject)
-        if randomNumber > 0 {
-            robot.move()
-        }else {
+        
+        // You may want to paste your Part 1 implementation of continueStraightOrRotate(robot: ComplexRobotObject) here
+        if randomNumber == 0{
             randomlyRotateRightOrLeft(robot)
         }
+        
+        if randomNumber == 1{
+            robot.move()
+        }
+        
+        
+        
     }
 }
