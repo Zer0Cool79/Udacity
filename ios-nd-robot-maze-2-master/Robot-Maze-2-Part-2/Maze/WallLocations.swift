@@ -60,13 +60,13 @@ extension ControlCenter {
         // TODO: Check if there is a wall at the bottom of the current cell
         let isWallDown = cell.bottom
         if isWallDown {
-            numberOfWalls+=1
+            numberOfWalls += 1
         }
         
         // TODO: Check if there is a wall to the left of the current cell
         let isWallLeft = cell.left
         if isWallLeft {
-            numberOfWalls+=1
+            numberOfWalls += 1
         }
         
         // Step 2.1b
