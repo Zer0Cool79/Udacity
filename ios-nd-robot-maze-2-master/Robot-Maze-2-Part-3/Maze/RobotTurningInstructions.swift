@@ -46,12 +46,12 @@ extension ControlCenter {
             robot.rotateRight()
         } else if robot.direction == .Up && wallInfo.left {
             robot.rotateRight()
-        } else if robot.direction == .Right && wallInfo.left {
+        } else if robot.direction == .Down && wallInfo.right {
             robot.rotateRight()
-        } else if robot.direction == .Down && wallInfo.left {
+        } else if robot.direction == .Right && wallInfo.up {
             robot.rotateRight()
         } else {
-            robot.rotateLeft()//
+            robot.rotateLeft()
         }
     }
 
