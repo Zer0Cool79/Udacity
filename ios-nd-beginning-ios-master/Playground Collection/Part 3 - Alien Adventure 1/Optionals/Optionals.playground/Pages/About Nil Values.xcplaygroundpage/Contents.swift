@@ -77,3 +77,6 @@ while (true){
     previousFlip = result
     print(result)
 }
+
+print(2%100)
+
